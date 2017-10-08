@@ -1,163 +1,165 @@
-/* header */
-
-.header {
-    width: 100%;
-    height: 60px;
-    background: #262626;
-}
-
-.header-inner {
+/** free **/
+.free {
     width: 1200px;
-    height: 60px;
-    margin: 0 auto; /* 居中 */
-}
-
-.logo {
-    width: 185px;
-    height: 40px;
-    float: left;
-    background: url("../images/logo.png") no-repeat;
-    margin-top: 11px;
-}
-
-.logo a {
-    width: 185px;
-    height: 40px;
-    display: block; /* 块元素 */
-    text-indent: -2000em; /* 让文字不显示 */
-}
-
-.nav {
-    float: left;
-    margin-left: 85px;
-}
-
-.nav li {
-    float: left;
-    font-size: 14px;
-}
-
-.nav li a {
-    padding: 0 18px;
-    display: inline-block;
-    text-align: center;
-    line-height: 60px;
-    height: 60px;
-}
-
-.nav li a:hover {
-    background: #008aff;
-    color: #fff;
-}
-
-.user-btn {
-    float: right;
-    padding-top: 13px;
-}
-
-.user-btn a:hover {
-    color: #fff;
-}
-
-.user-login, .user-reg {
-    width: 45px;
-    height: 26px;
-    border: 2px solid #ff6400;
-    display: inline-block;
-    text-align: center;
-    line-height: 26px;
-}
-
-.user-reg {
-    background: #ff6400;
-    color: #fff;
-}
-
-/*  banner */
-.banner {
-    width: 100%;
-    height: 520px;
-    background: url("../images/banner.jpg") #224072 no-repeat center top;
-    position: relative; /* 相对定义（父） */
-}
-
-.circle {
-    width: 111px;
-    height: 28px;
-    background: rgba(0, 0, 0, 0.5); /* 半透明 */
-    position: absolute; /* 绝对定位（子） */
-    left: 50%;
-    margin-left: -55px;
-    bottom: 12px;
-    border-radius: 14px; /* 圆角 */
-}
-
-.circle li {
-    width: 14px;
-    height: 14px;
-    background: rgba(255, 255, 255, 0.5); /* 半透明 */
-    float: left;
-    margin: 7px 0 0 17px;
-    border-radius: 50%; /* 正园是50% */
-    cursor: pointer; /* 手型 */
-}
-
-/* footer */
-.footer {
-    width: 100%;
-    height: 220px;
-    border: 2px solid #293751;
-}
-
-.footer-t {
-    width: 100%;
-    height: 180px;
-    background: #314363;
-}
-
-.footer-inner {
-    width: 1200px;
+    height: 472px;
     margin: 0 auto;
-    padding-top: 30px;
+    padding-top: 40px;
+}
+
+.free h2, .vip h2 {
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+    font-family: "microsoft yahei";
+    color: #333;
+}
+
+.free p {
+    height: 40px;
+    text-align: center;
+}
+
+.free li {
+    float: left;
+}
+
+.free-li-c {
+    margin: 0 22px;
+}
+
+/** vip **/
+.vip {
+    width: 100%;
+    /*height: 986px;*/
+    overflow: hidden;
+    padding-top: 62px;
+    padding-bottom: 37px;
+    background: url("../images/vip-bg_03.jpg") repeat-x #f2f2f2;
+}
+
+.vip p {
+    height: 80px;
+    text-align: center;
+}
+
+.vip p a {
+    width: 93px;
+    height: 33px;
+    border: 2px solid #526da0;
+    font-size: 14px;
+    display: inline-block;
+    text-align: center;
+    line-height: 33px;
+    border-radius: 5px;
+    color: #526da0;
+}
+
+.vip p a.current {
+    background: #526da0;
+    color: #fff;
     position: relative;
 }
 
-.footer-inner dl {
-    width: 190px;
-    float: left;
+.vip p a span {
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-color: #526da0 transparent transparent transparent;
+    border-style: solid dashed dashed dashed;
+    border-width: 6px;
+    left: 50%;
+    bottom: -14px;
+    margin-left: -6px;
+    overflow: hidden; /* 解决ie6 三角问题 */
 }
 
-.footer-inner dt {
-    height: 36px;
-    color: #fff;
+.vip ul {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden; /* 清除浮动 */
+}
+
+.vip li {
+    width: 385px;
+    height: 343px;
+    /*background: pink;*/
+    float: left;
+    margin-bottom: 40px;
+    border: 1px solid #ccc;
+}
+
+.vip li:hover {
+    border: 1px solid #ff6400;
+}
+
+.vip li.vip-li-c {
+    margin: 0 19px;
+}
+
+.cource-img {
+    position: relative;
+    width: 385px; /* 这个宽高是兼容ie写的。通常定位的时候，如果父盒子是被撑开的，给子盒子加绝对定位，会出现错乱。 解决办法：给父盒子宽高。 */
+    height: 197px;
+}
+
+.cource-img span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -38px;
+    margin-top: -38px;
+}
+
+.cource-title {
+    padding: 12px 10px 0 10px;
+}
+
+.cource-title h3 {
     font-size: 18px;
     font-family: "microsoft yahei";
+    color: #333;
+    height: 36px;
 }
 
-.footer-inner dd {
-    height: 25px;
+.cource-title h3 span {
+    color: #ff6400;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 66px;
 }
 
-.footer-inner dd a {
-    background: url("../images/dot_05.jpg") no-repeat left center;
-    padding-left: 10px;
+.cource-title p {
+    line-height: 18px;
+    text-align: left;
+    height: 50px;
 }
 
-.code {
-    position: absolute; /* 子绝父相对 */
-    top: 40px;
-    right: 0px;
+.cource-look {
+    text-align: right;
+    margin-right: 16px;
+    line-height: 28px;
 }
 
-.footer-b {
-    width: 100%;
-    height: 40px;
-    background: #1b2435;
+.cource-look a {
+    display: inline-block;
+    width: 73px;
+    height: 28px;
+    background: #ff6400;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
 }
 
-.footer-b p {
-    width: 1200px;
-    line-height: 40px;
+.more {
+    width: 253px;
+    height: 50px;
+    border: 2px solid #526da0;
+    display: block;
     margin: 0 auto;
+    border-radius: 5px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    color: #526da0;
+    font-family: "microsoft yahei";
 }
-
